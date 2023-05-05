@@ -1,0 +1,7 @@
+kind: Kustomization
+resources:
+- rhacs-operator-namespace.yaml
+- stackrox-namespace.yaml
+- rhacs-og.yaml
+- rhacs-sub.yaml
+- central.yaml

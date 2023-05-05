@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  annotations:
+    olm.providedAPIs: Central.v1alpha1.platform.stackrox.io,SecuredCluster.v1alpha1.platform.stackrox.io
+    argocd.argoproj.io/sync-wave: "2"
+  name: rhacs-operator
+  namespace: rhacs-operator
+spec:
+  upgradeStrategy: Default
+status: {}
