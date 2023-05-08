@@ -45,6 +45,7 @@ This service prevents the creation of workloads that violate RHACS security poli
 To create all of the elements of the RHACS secured cluster services, you must create a SecuredCluster Kubernetes CR. The RHACS operator defines this resource.
 
 ### RHACS Architecture
+
 ![](./images/0.png)
 
 #### Installing and Configuring RHACS
@@ -274,12 +275,15 @@ From the RHACS web console, follow the steps below to generate the init bundle Y
 
 - Navigate to Platform Configuration > Integrations.
 - Click Generate Bundle.
+  
 ![](./images/3.png)
 
 - Enter a name for the init bundle and click Generate.
+  
 ![](./images/4.png)
 
 - Click Download Kubernetes Secret File.
+  
 ![](./images/5.png)
 
 ```
@@ -399,10 +403,12 @@ status.
 Run a compliance scan and review the result from RHACS dashboard.
 - On the RHACS web console, navigate to Compliance to display the COMPLIANCE page.
 - Click SCAN ENVIRONMENT to scan all the secured clusters. The COMPLIANCE dashboard shows results from the compliance report for the clusters.
+
 ![](./images/7.png)
 
 - Click 1 CLUSTERS (Scanned) to see the Resource List.
 - Click cluster name to view more details for the cluster compliance scan.
+
 ![](./images/8.png)
 
 You can click the different dashboards to obtain more details about the compliance scan results.
@@ -414,6 +420,7 @@ the central registry.
 
 - From the RHACS web console, navigate to Platform Configuration > Policies Mangement.
 - Click Create policy.
+
 ![](./images/9.png)
 
 - On the Policy details page, add the following parameters:
@@ -441,11 +448,13 @@ the central registry.
 
 - In the Drag out policy field pane, expand the Image registry list. Drag the Image tag tile to the Policy Section 1 list and type latest in the Image tag text field.
 - Drag the Image registry tile to the Policy Section 1 list and type image registry URL in the Image pulled from registry text field.
+
 ![](./images/12.png)
 
 - Click Next.
 - On the Policy scope page, click Next.
 - On the Review policy page, click Save to create the policy.
+
 ![](./images/13.png)
 
 #### Deploy the application to test RHACS policy to prevent the deployment of images by using the latest tag from OpenShift internal image registry.
